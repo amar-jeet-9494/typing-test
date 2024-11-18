@@ -1,38 +1,137 @@
-.App {
-  text-align: center;
+* {
+  padding: 0%;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Tahoma;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+body {
+  height: 100vh;
+  background-color: aqua;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+}
+
+header {
+  position: absolute;
+  width: 100%;
+  top: 10px;
+}
+
+.navbar {
+  position: relative;
+  width: 97%;
+  margin: auto;
+  border-radius: 2rem;
+  background-color: #FF5733;
+  padding: 2rem;
+}
+
+.navbar > h1 {
   color: white;
+  text-transform: uppercase;
+  font-family: monospace;
+  font-size: 2.5em;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+
+.container {
+  width: 80vw;
+  height: 70vh;
+  border: 3px solid #000000;
+  background-color: #2E8B57;
+  border-radius: 2rem;
+  overflow: hidden;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.setting {
+  background-color: #FFD700;
+  height: 15vh;
+  display: flex;
+  align-items: center;
+
+  gap: 5vw;
+
+  padding: 1rem;
+  font-size: 2rem;
+}
+
+.setting > p > span {
+  font-size: 2.5rem;
+  font-weight: bold;
+}
+
+.content {
+  padding: 50px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+  overflow: hidden;
+}
+
+.content > span {
+  background: none;
+  outline: none;
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 3px;
+  font-weight: bold;
+
+  opacity: 0.5;
+  color: #FF69B4;
+}
+
+.content > span:first-child {
+  opacity: 1;
+  color: #00FF7F;
+  text-decoration: underline;
+}
+
+
+.type-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.type-box #text-box {
+  width: 90%;
+  font-family: sans-serif;
+  font-size: 1.5rem;
+  letter-spacing: 2px;
+  border-radius: 2rem;
+  padding: 20px;
+  padding-left: 25px;
+
+  border: 2px solid floralwhite;
+  outline: none;
+
+  background-color: #262728;
+  color: #00ffffb1;
+  font-weight: bold;
+}
+
+.type-box #text-box:focus {
+  border: 2px solid #9B50BA;
+  box-shadow: 0px 0px 8px #9B50BA;
+}
+
+#reset {
+  width: 35%;
+  background-color: #FF4181;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: whitesmoke;
+  padding: 10px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-transform: uppercase;
+  border-radius: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
